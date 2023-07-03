@@ -10,7 +10,7 @@
             <div class=" card animate__animated animate__flipInY m-2 text-center p-0" v-for="proj in projects" :key="proj.title" >
                 <div class="row g-0">
                   <div class="col ">
-                    <img :src="proj.image" class="img-fluid rounded-start" :alt="proj.title">
+                    <img :src="proj.image" class="img-fluid rounded-start" :alt="proj.title" loading="lazy">
                   </div>
                 </div>
                 <div class="row body ">
