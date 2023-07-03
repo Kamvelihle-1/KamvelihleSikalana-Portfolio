@@ -51,6 +51,7 @@
 }
 .nav-link:hover{
     background-color: #f3f2e9;
+    color:#06283d;
     border-radius: .5rem;
     transform: translateY(0.5rem);
     transition: top 0.5s, opacity 0.5s ;

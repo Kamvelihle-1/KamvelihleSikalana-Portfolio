@@ -19,8 +19,8 @@
                           <h5 class="card-title fw-bold fs-large ">{{proj.title}}</h5>
                           <br>
                           <p class="card-text">{{proj.description}}</p>
-                          <button class="card-text m-2 p-1"><a :href="proj.website">Go To Site</a></button>
-                          <button class="card-text p-1"><a :href="proj.repoLink">Go To Repository</a></button>
+                          <button class="card-text m-2 p-1"><a target="_blank" :href="proj.website">Go To Site</a></button>
+                          <button class="card-text p-1"><a target="_blank" :href="proj.repoLink">Go To Repository</a></button>
                         </div>
                       </div>
                 </div>
