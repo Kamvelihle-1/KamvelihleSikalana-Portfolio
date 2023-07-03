@@ -1,9 +1,17 @@
 <template>
   <div class="home " >
     <div class="container mt-5 pt-5 ">
-        <h1 class="display-1"><span class="h">{{oH1}}</span> Welcome to my portfolio <span class="h">{{oH2}}</span></h1>
+      <div class="row">
+        <div class="col">
+          <h1 class="display-1"><span class="h">{{oH1}}</span> Welcome to my portfolio <span class="h">{{oH2}}</span></h1>
         <br>
         <p class="display-6">Hi, I am Kamvelihle Sikalana an aspiring <span >{{item}}</span>, so what are we building? </p>
+        </div>
+        <div class="col">
+          <img src="https://i.postimg.cc/zBv3R5bK/C12-C2-Kamvelihle-Sikalana-1.jpg" alt="my image" loading="lazy">
+        </div>
+      </div>
+        
     </div>
   </div>
 </template>
@@ -74,6 +82,10 @@ span{
 }
 h1{
   color: #f3f2e9;
+}
+img{
+  border-radius: 5rem;
+  max-height: 30rem;
 }
 
 </style>
