@@ -22,6 +22,8 @@
 #app >*{
     grid-column: 1/-1;
 }
-h5,h1{
+h5,h1,h2{
+    color:#f3f2e9;
     font-style: italic;
+    
 }

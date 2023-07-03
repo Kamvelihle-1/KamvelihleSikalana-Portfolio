@@ -63,9 +63,7 @@ export default {
 
 
 <style scoped>
-h1{
-  color: white;
-}
+
 span{
   font-size: 3rem;
   

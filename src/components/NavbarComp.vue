@@ -58,5 +58,8 @@
 .navbar-toggler,.navbar-toggler-icon{
     background-color: #f3f2e9;
 }
+.navigation{
+  margin-bottom: 3rem;
+}
 
 </style>
