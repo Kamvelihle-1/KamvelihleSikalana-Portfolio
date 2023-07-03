@@ -6,7 +6,7 @@ export default createStore({
     testimonials :null, 
     education :null, 
     skills:null, 
-    msg:null
+    
   },
   getters: {
   },
@@ -16,12 +16,9 @@ export default createStore({
       let {projects} = await( await fetch(inData) ).json()
       if(projects) {
         state.projects =projects
-      } else{
-        
-      } 
+      }
     } catch (e) {
-        state.msg = e
-        alert(msg)
+        alert(e.msg)
     } 
     }, 
     async getTest(state) {
@@ -29,12 +26,9 @@ export default createStore({
       let {testimonials} = await( await fetch(inData) ).json()
       if(testimonials) {
         state.testimonials =testimonials
-      } else{
-        
-      } 
+      }
     } catch (e) {
-        state.msg = e
-        alert(msg)
+        alert(e.msg)
     } 
     },
     async getSkl(state) {
@@ -42,12 +36,9 @@ export default createStore({
       let {skills} = await( await fetch(inData) ).json()
       if(skills) {
         state.skills =skills
-      } else{
-        
-      } 
+      }
     } catch (e) {
-        state.msg = e
-        alert(msg)
+        alert(e.msg)
     } 
     },
     async getEdu(state) {
@@ -55,12 +46,9 @@ export default createStore({
       let {education } = await( await fetch(inData) ).json()
       if(education ) {
         state.education =education
-      } else{
-        
       } 
     } catch (e) {
-        state.msg = e
-        alert(msg)
+        alert(e.msg)
     } 
    } 
   },

@@ -14,8 +14,4 @@
    } 
 </script>
 <style scoped>
-//.about{
- // background-color:blue;
-  // border-radius: 1.5rem;
- //} 
 </style>

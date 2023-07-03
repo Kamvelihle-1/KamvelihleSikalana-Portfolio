@@ -1,9 +1,9 @@
 <template>
   <div class="home " >
-    <div class="container mt-5 pt-5">
-      <h1 class="display-1">Welcome to my portfolio</h1>
-      <br>
-      <p class="display-6"><super>Hi</super>, I am Kamvelihle Sikalana an aspiring <span >{{item}}</span>, so what are we building? </p>
+    <div class="container mt-5 pt-5 ">
+        <h1 class="display-1">Welcome to my portfolio</h1>
+        <br>
+        <p class="display-6">Hi, I am Kamvelihle Sikalana an aspiring <span >{{item}}</span>, so what are we building? </p>
     </div>
   </div>
 </template>
@@ -16,11 +16,12 @@ export default {
   data() {
     return{
       item:'', 
-      tEffect : ["Software Engineer","Penetration Tester","IT Security Officer"],
-      typingSpeed: 100, // Adjust the typing speed (in milliseconds)
-      repeatDelay: 1000, // Adjust the delay between repeats (in milliseconds)
-      repeatCount: 3, // Adjust the number of times to repeat the animation
-      repeatIndex: 0, // Counter for tracking the current repeat index
+      tEffect : ["Software Engineer "," Penetration Tester "],
+      cIndex: 0,
+      typingSpeed: 200, 
+      rDelay: 1000, 
+      rCount: 10,
+      rIndex: 0, 
     };
   },
   mounted() {
@@ -28,25 +29,35 @@ export default {
   },
   methods: {
     startTyping() {
+      const currentValue = this.tEffect[this.cIndex];
       let i = 0;
       const typeInterval = setInterval(() => {
-        if (i < this.fullText.length) {
-          this.text += this.fullText.charAt(i);
-          i++;
-        } else {
-          clearInterval(typeInterval);
-          setTimeout(() => {
-            this.text = ''; // Reset text
-            this.repeatIndex++; // Increment repeat index
+      
+          if (i < currentValue.length) {
+            this.item += currentValue.charAt(i);
+            i++;
+          } else {
+            clearInterval(typeInterval);
+            setTimeout(() => {
+              this.item = ''; 
+              this.cIndex++;
+              this.rIndex++; 
 
-            if (this.repeatIndex < this.repeatCount) {
-              this.startTyping(); // Start a new animation repeat
+              if (this.cIndex === this.tEffect.length) {
+              this.cIndex = 0; 
+              this.rIndex++; 
             }
-          }, this.repeatDelay);
-        }
+
+            if (this.rIndex < this.rCount) {
+              this.startTyping(); 
+            }
+            }, this.rDelay);
+          }
+        
+         
       }, this.typingSpeed);
-    },
-   }, 
+    }
+   } 
 };
 </script>
 
@@ -55,6 +66,11 @@ export default {
 h1{
   color: white;
 }
+span{
+  font-size: 3rem;
+  
+}
+
 
 </style>
 
