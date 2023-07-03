@@ -1,6 +1,6 @@
 <template>
   <div class="container about mt-5 px-5  ">
-    <h2 class="display-2"><span>{{oH2}}</span> About me <span>{{oH3}}</span></h2>
+    <h1 class="display-1"><span>{{oH2}}</span> About me <span>{{oH3}}</span></h1>
     <br>
   
     <p> <span>{{ p1}} </span>I am a 20 years old young man from Cape Town, South Africa, with a great passion for anything tech but more specifically programming. I have a vested interest in security and software engineering fields within tech, of which I am currently perusing. 
@@ -31,7 +31,7 @@ span{
   font-size:3rem;
   color: #06283d;
 }
-h2{
+h1{
   color:#f3f2e9;
 }
 
