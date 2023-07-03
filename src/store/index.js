@@ -33,9 +33,9 @@ export default createStore({
     },
     async getSkl(state) {
     try{
-      let {skills} = await( await fetch(inData) ).json()
-      if(skills) {
-        state.skills =skills
+      let {Skills} = await( await fetch(inData) ).json()
+      if(Skills) {
+        state.skills =Skills
       }
     } catch (e) {
         alert(e.msg)
