@@ -2,12 +2,12 @@
     <div class="container ">
         <div class="row my-3">
             <div class="col-12 ">
-                <h1 class="display-1">Projects</h1>
+                <h1 class="display-1"><span>{{oH1}}</span> Projects <span>{{oH2}}</span></h1>
             </div>
         </div>
 
         <div class="row ">
-            <div class=" card  m-2 text-center p-0" v-for="proj in projects" :key="proj.title" >
+            <div class=" card animate__animated animate__flipInY m-2 text-center p-0" v-for="proj in projects" :key="proj.title" >
                 <div class="row g-0">
                   <div class="col ">
                     <img :src="proj.image" class="img-fluid rounded-start" :alt="proj.title">
@@ -32,6 +32,12 @@
 
 <script>
     export default {
+        data(){
+            return{
+                oH1:'<h1>',
+                oH2:'</h1>'
+            }
+        },
         computed:{
             projects(){
                 return  this.$store.state.projects
@@ -64,7 +70,9 @@ h1{
   height: 223px;
   max-width: 395px;
 }
-
+span{
+    color: #06283d;
+}
 .projects{
     border-radius: 1.5rem;
 }
