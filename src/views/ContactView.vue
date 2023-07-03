@@ -60,11 +60,13 @@
                 email:'',
                 msg:'',
                 oH1:'<h1>',
-                oH2:'</h1>'   
+                oH2:'</h1>',
+                form:document.querySelector('.contact')
+                 
             }
         },
         methods:{
-            formValidator(){
+            formValidator(event){
                switch (true) {
                 case !isNaN(this.name) || this.name:
                     alert('Please enter your name')
@@ -83,7 +85,29 @@
                     this.msg=''
                     break;
                 default:
-                    
+                    var data = new FormData(event.target);
+                    fetch(event.target.action, {
+                      method: 'POST',
+                      body: data,
+                      headers: {
+                          'Accept': 'application/json'
+                      }
+                    }).then(response => {
+                      if (response.ok) {
+                        alert ("Thanks for your submission!");
+                        this.form.reset()
+                      } else {
+                        response.json().then(data => {
+                          if (Object.hasOwn(data, 'errors')) {
+                           alert( data["errors"].map(error => error["message"]).join(", "))
+                          } else {
+                            alert("Oops! There was a problem submitting your form")
+                          }
+                        })
+                      }
+                    }).catch(() => {
+                     alert("Oops! There was a problem submitting your form")
+                    });
                     break;
                }
             }
