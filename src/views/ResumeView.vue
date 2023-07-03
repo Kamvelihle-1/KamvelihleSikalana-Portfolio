@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="education">
-            <h2 class="display-2">Education</h2>
+            <h1 class="display-1">Education</h1>
             <br>
             <div class="container edu ">
                 <div class="card  " v-for="edu in education" :key="edu.id">
@@ -18,7 +18,7 @@
         </div>
         <br>
         <div class="skills">
-            <h2 class="display-2">Skills</h2>
+            <h1 class="display-1">Skills</h1>
             <br>
             <div class="conatiner sk">
                 <div class="card mb-3 skl" v-for="skill in skills" :key="skill.type" style="max-width: 540px;">
@@ -59,7 +59,7 @@
 </script>
 
 <style scoped>
-h2{
+h1{
     color:#f3f2e9;
 }
 .edu,.sk{
