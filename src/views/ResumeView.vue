@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="education">
-            <h1 class="display-1">Education</h1>
+            <h1 class="display-1"><span>{{oH1}}</span> Education <span>{{oH2}}</span></h1>
             <br>
             <div class="container edu ">
                 <div class="card  " v-for="edu in education" :key="edu.id">
@@ -18,7 +18,7 @@
         </div>
         <br>
         <div class="skills">
-            <h1 class="display-1">Skills</h1>
+            <h1 class="display-1"><span>{{oH1}}</span> Skills <span>{{oH2}}</span></h1>
             <br>
             <div class="conatiner sk">
                 <div class="card mb-3 skl" v-for="skill in skills" :key="skill.type" style="max-width: 540px;">
@@ -42,6 +42,12 @@
 
 <script>
     export default {
+        data(){
+            return{
+                oH1:'<h1>',
+                oH2:'</h1>'    
+            }
+        },
         computed:{
             education(){
                 return this.$store.state.education
@@ -76,6 +82,9 @@ h1{
     margin: 2rem;
     background-color: #06283d;
     color: #f3f2e9; 
+}
+span{
+    color: #06283d;
 }
 
 

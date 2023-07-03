@@ -1,7 +1,7 @@
 <template>
   <div class="home " >
     <div class="container mt-5 pt-5 ">
-        <h1 class="display-1">Welcome to my portfolio</h1>
+        <h1 class="display-1"><span class="h">{{oH1}}</span> Welcome to my portfolio <span class="h">{{oH2}}</span></h1>
         <br>
         <p class="display-6">Hi, I am Kamvelihle Sikalana an aspiring <span >{{item}}</span>, so what are we building? </p>
     </div>
@@ -22,6 +22,8 @@ export default {
       rDelay: 1000, 
       rCount: 10,
       rIndex: 0, 
+      oH1:'<h1>',
+      oH2:'</h1>'
     };
   },
   mounted() {
@@ -66,9 +68,13 @@ export default {
 
 span{
   font-size: 3rem;
-  
 }
-
+.h{
+  color:#06283d;
+}
+h1{
+  color: #f3f2e9;
+}
 
 </style>
 

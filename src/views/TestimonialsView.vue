@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="display-1">Testimonials</h1>
+        <h1 class="display-1"><span>{{oH1}}</span> Testimonials <span>{{oH2}}</span></h1>
         <br>
         <div class="container testimonials">
             <div class="card m-5 animate__animated animate__fadeInLeft" v-for="test in testimonials" :key="test"  >
@@ -26,6 +26,12 @@
 
 <script>
     export default {
+        data(){
+            return{
+                oH1:'<h1>',
+                oH2:'</h1>'
+            }
+        },
         computed:{
             testimonials(){
                return this.$store.state.testimonials
@@ -49,6 +55,12 @@
 img{
     max-height: 340px;
     width: 30rem;
+}
+span{
+    color: #06283d;
+}
+h1{
+    color: #f3f2e9;
 }
 
 </style>
