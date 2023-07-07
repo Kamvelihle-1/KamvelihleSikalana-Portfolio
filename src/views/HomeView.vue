@@ -10,8 +10,11 @@
         <div class="col">
           <img src="https://i.postimg.cc/zBv3R5bK/C12-C2-Kamvelihle-Sikalana-1.jpg" alt="my image" loading="lazy">
         </div>
-        <div class="cold" >
-          <button><a href="https://drive.google.com/file/d/16HyIAJuyri5GyoyMu25oEVdRHmt2UtqO/view?usp=drivesdk" target_blank> Download CV</a></button>
+        
+      </div>
+      <div class="row" >
+        <div class="col" >
+          <button id="cv" class="p-1 m-2"><a href="https://drive.google.com/file/d/16HyIAJuyri5GyoyMu25oEVdRHmt2UtqO/view?usp=drivesdk" target_blank> Download CV</a></button>
         </div>
       </div>
         
@@ -90,6 +93,15 @@ img{
   border-radius: 5rem;
   max-height: 30rem;
 }
+#cv a{
+  text-decoration:none;
+  color:#f3f2e9;
+} 
+#cv{
+  background-color:#06283d;
+  border-radius:1.5rem;
+
+} 
 
 </style>
 
