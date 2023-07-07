@@ -1,6 +1,6 @@
 <template>
   <div class="home " >
-    <div class="container mt-5 pt-5 ">
+    <div class="container mt-sm-5 pt-5 ">
       <div class="row">
         <div class="col">
           <h1 class="display-1"><span class="h">{{oH1}}</span> Welcome to my portfolio <span class="h">{{oH2}}</span></h1>
