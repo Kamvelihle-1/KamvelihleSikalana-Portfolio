@@ -69,6 +69,7 @@ h1{
 .card img{
   height: 223px;
   max-width: 395px;
+  min-width: 120px;
 }
 span{
     color: #06283d;
