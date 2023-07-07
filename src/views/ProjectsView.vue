@@ -80,7 +80,7 @@ span{
 @media screen and (width <400px){
   .card img{
   height: 223px;
-  max-width: 120px;
+  max-width: 50px;
     }  
 
 </style>
