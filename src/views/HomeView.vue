@@ -10,6 +10,9 @@
         <div class="col">
           <img src="https://i.postimg.cc/zBv3R5bK/C12-C2-Kamvelihle-Sikalana-1.jpg" alt="my image" loading="lazy">
         </div>
+        <div class="cold" >
+          <button><a href="https://drive.google.com/file/d/16HyIAJuyri5GyoyMu25oEVdRHmt2UtqO/view?usp=drivesdk" target_blank> Download CV</a></button>
+        </div>
       </div>
         
     </div>
