@@ -77,5 +77,10 @@ span{
 .projects{
     border-radius: 1.5rem;
 }
+@media screen and (width <400px){
+  .card img{
+  height: 223px;
+  max-width: 120px;
+    }  
 
 </style>
