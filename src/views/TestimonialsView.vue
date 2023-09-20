@@ -4,9 +4,9 @@
         <br>
         <div class="container testimonials">
             <div class="card m-5 animate__animated animate__fadeInLeft" v-for="test in testimonials" :key="test"  >
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img :src="test.image" class="img-fluid rounded-start " :alt="test.name" loading="lazy">
+                <div class="row g-0 justify-content-center">
+                  <div class="col-md-4 text-center m-0 p-0">
+                    <img :src="test.image" class="img-fluid rounded-start m-0 p-0" :alt="test.name" loading="lazy">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -53,8 +53,8 @@
     flex-wrap: wrap;
 }
 img{
-    max-height: 340px;
-    width: 30rem;
+    max-height: 240px;
+    max-width: 15rem;
 }
 span{
     color: #06283d;

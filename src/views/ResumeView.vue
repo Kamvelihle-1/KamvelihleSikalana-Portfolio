@@ -24,7 +24,7 @@
                 <div class="card mb-3 skl" v-for="skill in skills" :key="skill.type" style="max-width: 540px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img :src="skill.icon" class="img-fluid rounded-start" :alt="skill.type" loading="lazy">
+                        <img :src="skill.icon" class="img-fluid rounded-start" :alt="skill.type" loading="lazy" style="background-color:#f3f2e9;height:95px;width:10rem">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
