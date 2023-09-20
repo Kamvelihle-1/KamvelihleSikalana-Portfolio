@@ -14,7 +14,7 @@
       </div>
       <div class="row" >
         <div class="col" >
-          <button id="cv" class="p-1 m-2"><a href="https://drive.google.com/file/d/16HyIAJuyri5GyoyMu25oEVdRHmt2UtqO/view?usp=drivesdk" target_blank> Download CV</a></button>
+          <button id="cv" class="p-1 m-2"><a href="https://drive.google.com/file/d/1h67xKWE2v2ljzeShehmkJ75PN6S_YhcD/view?usp=sharing" target_blank> Download CV</a></button>
         </div>
       </div>
         
