@@ -81,5 +81,5 @@ span{
   .card img{
   max-width: 50px;
     }  
-
+}
 </style>
