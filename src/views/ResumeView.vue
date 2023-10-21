@@ -1,17 +1,19 @@
 <template>
-    <div class="container">
+    <div class="container p-0">
         <div class="education">
             <h1 class="display-1"><span>{{oH1}}</span> Education <span>{{oH2}}</span></h1>
             <br>
-            <div class="container edu ">
-                <div class="card  " v-for="edu in education" :key="edu.id">
-                    <div class="card-header">
+            <div class="container-fluid edu ">
+                <div class="card  " v-for="edu in education" :key="edu.id" >
+                    <div class="card-header text-center" style="min-height: 74.25px;">
                      {{ edu.place }}
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">{{edu.year}}</h5>
                       <p class="card-text">{{edu.description}}</p>
-                      <p class="card-text">{{edu.certificate}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">{{edu.certificate}}</p>
                     </div>
                 </div>
             </div>
@@ -21,10 +23,10 @@
             <h1 class="display-1"><span>{{oH1}}</span> Skills <span>{{oH2}}</span></h1>
             <br>
             <div class="conatiner sk">
-                <div class="card mb-3 skl" v-for="skill in skills" :key="skill.type" style="max-width: 540px;">
+                <div class="card mb-3 skl" v-for="skill in skills" :key="skill.type" style="max-width: 240.5px;min-width: 240.5px;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img :src="skill.icon" class="img-fluid rounded-start" :alt="skill.type" loading="lazy" style="background-color:#f3f2e9;height:95px;width:10rem">
+                        <img :src="skill.icon" class="img-fluid rounded-start" :alt="skill.type" loading="lazy" style="background-color:#f3f2e9;height:95px;max-width:10rem">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">

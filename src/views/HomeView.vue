@@ -1,20 +1,20 @@
 <template>
   <div class="home " >
-    <div class="container mt-sm-5 pt-5 ">
+    <div class="container ">
       <div class="row">
         <div class="col">
           <h1 class="display-1"><span class="h">{{oH1}}</span> Welcome to my portfolio <span class="h">{{oH2}}</span></h1>
         <br>
-        <p class="display-6">Hi, I am Kamvelihle Sikalana an aspiring <span >{{item}}</span>, so what are we building? </p>
+        <p class="display-6">Hi, I am Kamvelihle Sikalana an aspiring <span >{{item}}</span>, so what are we building or securing? </p>
         </div>
         <div class="col">
           <img src="https://i.postimg.cc/zBv3R5bK/C12-C2-Kamvelihle-Sikalana-1.jpg" alt="my image" loading="lazy">
         </div>
         
       </div>
-      <div class="row" >
+      <div class="row mt-3" >
         <div class="col" >
-          <button id="cv" class="p-1 m-2"><a href="https://drive.google.com/file/d/1h67xKWE2v2ljzeShehmkJ75PN6S_YhcD/view?usp=sharing" target_blank> Download CV</a></button>
+          <a id="cv" class="btn p-1 m-2" href="https://drive.google.com/file/d/1j-koUzB4avNUXO6JqOYxowMx_XwpPbK_/view?usp=share_link" target="_blank"> Download CV</a>
         </div>
       </div>
         
@@ -30,7 +30,7 @@ export default {
   data() {
     return{
       item:'', 
-      tEffect : ["Software Engineer "," Penetration Tester "],
+      tEffect : ["Software Engineer "," Penetration Tester ","Cloud Security Engineer"],
       cIndex: 0,
       typingSpeed: 200, 
       rDelay: 1000, 
@@ -93,11 +93,13 @@ img{
   border-radius: 5rem;
   max-height: 30rem;
 }
-#cv a{
+/* #cv a{
   text-decoration:none;
   color:#f3f2e9;
-} 
+}  */
 #cv{
+  text-decoration:none;
+  color:#f3f2e9;
   background-color:#06283d;
   border-radius:1.5rem;
 

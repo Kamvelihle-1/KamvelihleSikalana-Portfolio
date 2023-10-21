@@ -1,5 +1,5 @@
 <template>
-  <div class="container about mt-5 px-5  ">
+  <div class="container about px-5  ">
     <h1 class="display-1 animate__animated animate__fadeInLeft"><span>{{oH2}}</span> About me <span>{{oH3}}</span></h1>
     <br>
   
