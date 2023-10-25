@@ -40,6 +40,7 @@
         },
         computed:{
             projects(){
+                console.log(this.$store.state.projects);
                 return  this.$store.state.projects
             }
         },

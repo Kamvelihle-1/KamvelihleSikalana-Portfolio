@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-let inData= "https://smasherk.github.io/vueEOMPJson/data" 
+let inData= "https://kamvelihle-1.github.io/vueEOMPJson/data/" 
 export default createStore({
   state: {
     projects:null, 
@@ -15,6 +15,7 @@ export default createStore({
     try{
       let {projects} = await( await fetch(inData) ).json()
       if(projects) {
+        console.log(projects,inData);
         state.projects =projects
       }
     } catch (e) {

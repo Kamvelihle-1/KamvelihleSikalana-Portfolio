@@ -1,5 +1,5 @@
 <template>
-    <div class="container p-0">
+    <div class="resume p-0">
         <div class="education">
             <h1 class="display-1"><span>{{oH1}}</span> Education <span>{{oH2}}</span></h1>
             <br>

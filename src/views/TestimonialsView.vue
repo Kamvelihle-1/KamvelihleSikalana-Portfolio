@@ -5,7 +5,7 @@
         <div class="container testimonials">
             <div class="card m-5 animate__animated animate__fadeInLeft" v-for="test in testimonials" :key="test"  >
                 <div class="row g-0 justify-content-center">
-                  <div class="col-md-4 text-center mt-3 p-0 tImage">
+                  <div class="col-md-4 align-content-center mt-5 p-0 tImage">
                     <img :src="test.image" class="img-fluid rounded-start m-0 p-0" :alt="test.name" loading="lazy">
                   </div>
                   <div class="col-md-8">
@@ -47,6 +47,7 @@
 <style scoped>
 .card{
     background-color:  #c0d0d5;
+    border: 0;
 }
 .testimonials{
     display: flex;
@@ -55,22 +56,21 @@
 
 .tImage{
   min-width: 45px;
-  max-width: 300px;
-  z-index: 999;
+  max-width: 200px;
+  z-index: 1000;
 }
 img{
  background: #c0d0d5;
   padding: 4px;
-  width: 190px;
-  height: 190px;
+  width: 200px;
+  height: 180px;
   border-radius: 50%;
 }
 .card-body {
   text-align: left;
   border: 1px solid #0e0f10;
   background: #fff;
-  padding: 20px 20px 20px 60px;
-  border-radius: 0;
+
 }
 span{
     color: #06283d;
