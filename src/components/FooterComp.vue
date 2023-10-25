@@ -14,7 +14,7 @@
             <div class="col-sm-6 col-12 p-0">
                 <ul>
                     <li class="list-inline-item "><a target="_blank" href="https://www.linkedin.com/in/kamvelihle-sikalana-4884a4198" class="btn-floating btn-sm text-white " style="font-size: 24px;"><i class="bi bi-linkedin"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="https://github.com/SmasherK" class="btn-floating btn-sm text-white " style="font-size: 24px;"><i class="bi bi-github"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://github.com/Kamvelihle-1" class="btn-floating btn-sm text-white " style="font-size: 24px;"><i class="bi bi-github"></i></a></li>
                 </ul>
             </div>
         </div>
